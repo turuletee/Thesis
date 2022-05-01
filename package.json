@@ -1,0 +1,20 @@
+{
+	"name": "university-token-sale",
+	"version": "1.0.0",
+	"description": "University Token Sale ICO",
+	"main": "truffle-config.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"dev": "lite-server"
+	},
+	"author": "Ignacio Arturo Fernandez Mendoza",
+	"licence": "ISC",
+	"devDependencies": {
+		"lite-server": "^2.6.1"
+	},
+	"dependencies": {
+		"ganache-cli": "^6.12.2"
+	}
+}
