@@ -1,3 +1,4 @@
+// const Web3 = require("web3");
 App = {
   web3Provider: null,
   contracts: {},
@@ -23,7 +24,9 @@ App = {
       web3 = new Web3(App.web3Provider);
     }
     console.log("CurrentProvider:", web3.currentProvider);
+    console.log(web3.eth.getAccounts());
     return App.initContracts();
+
   },
 
   initContracts: function() {
@@ -99,6 +102,7 @@ App = {
       // Load token contract
       App.contracts.UniToken.deployed().then(function(instance) {
         uniTokenInstance = instance;
+        console.log(App);
         return uniTokenInstance.balanceOf(App.account);
       }).then(function(balance) {
         $('.uni-balance').html(balance.toNumber());

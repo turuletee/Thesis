@@ -26,9 +26,43 @@
             			Marketplace
             		</button>
     			</a>
+    			</div>
+			<div class= "row">
+				<div class="col-lg-12">
+					 <h1 class="text-center"> UniToken Allowance Page</h1>
+					<hr/>
+					<br/>
+						
+				</div>
+				<div id="loader">
+					<p class="text-center">
+						Loading...
+					</p>
+				</div>
+				<div id="content" class="text-center" style="display: none;">
+					<p>
+						This is the allowance page, where you can define an allowance for a person you are sponsoring, please fill in the fields with the appropiate information and press submit. 
+					</p>
+				</br>
+					<form id="form_id">
+  							<label for="allower">Allower:</label>
+  							<input type="text" id="allower" name="allower"><br><br>
+  							<label for="allowant">Allowant:</label>
+  							<input type="text" id="allowant" name="allowant"><br><br>
+  							<label for="ammount">Ammount:</label>
+ 							<input type="text" id="ammount" name="ammount"><br><br>
+  							<input type="submit" value="Submit">
+						</form> 
+				</div>	
+			</div>
 				
 			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/web3.min.js"></script>
+		<script src="js/truffle-contract.min.js"></script>
+		<script src="js/allowance.js"></script>
 	</body>
 
 </html>
